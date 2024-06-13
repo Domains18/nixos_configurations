@@ -14,6 +14,6 @@ export const siteConfig: SiteConfig = {
 	description: 'For all your Fintech News', 
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
-	shareMessage: 'Share this post', // Message to share a post on social media
-	paginationSize: 6 // Number of posts per page
+	shareMessage: 'Share this post', 
+	paginationSize: 6
 }

@@ -2,7 +2,7 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "strictNullChecks": true,
-    "baseUrl": "/home/alpha/Documents/Github/fintech-project/blog-astro/client",
+    "baseUrl": "/home/alpha/Documents/Github/fintech-project/fintech-blog",
     "verbatimModuleSyntax": true,
     "paths": {
       "@/components/*": [
