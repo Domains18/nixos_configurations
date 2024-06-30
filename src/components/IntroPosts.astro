@@ -1,6 +1,7 @@
 ---
 import ListPosts from '@/components/ListPosts'
 import TitlePage from '@/components/TitlePage'
+import Header from '@/components/Header'
 import { getPosts } from '@/utils'
 
 const MAX_POSTS = 5 // max number of posts to show on the home page
@@ -8,6 +9,7 @@ const posts = await getPosts(MAX_POSTS)
 ---
 
 <div class="bg-white text-black bg-cover bg-center relative pb-4 px-5 md:px-0">
+
 	<div class='absolute inset-0 bg-opacity-10'></div>
 	<div class='sm:max-w-2xl md:max-w-screen-2xl mx-auto mt-4'>
 		<TitlePage title='Latest Posts' classes='text-black mb-4' />
