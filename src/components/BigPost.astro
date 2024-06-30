@@ -34,7 +34,7 @@ const {
 			!isIntro && (
 				<div class='z-30 absolute bottom-0 w-full h-20'>
 					<div class='-z-10 absolute bottom-0 glass w-full min-h-full' />
-					<div class='flex items-center justify-between gap-x-1 text-white px-6 py-4'>
+					<div class='flex items-center justify-between gap-x-1 text-black px-6 py-4'>
 						<div class='flex flex-col gap-1 items-center justify-center'>
 							<span class='text-sm'> {readTime}</span>
 						</div>
@@ -59,7 +59,7 @@ const {
 			<p
 				class={cn(
 					'overflow-hidden line-clamp-3 mb-5 font-[400] md:pr-[15%]',
-					isIntro ? 'text-white' : 'text-gray-700 dark:text-white'
+					isIntro ? 'text-black' : 'text-gray-700 dark:text-black'
 				)}
 			>
 				{description}
@@ -69,7 +69,7 @@ const {
 		<footer class='flex justify-between items-center'>
 			<a
 				href={`/post/${slug}/`}
-				class='flex justify-center items-center dark:text-white rounded-full hover:translate-x-1 transition-transform duration-150 ease-in-out font-semibold gap-1 group'
+				class='flex justify-center items-center dark:text-black rounded-full hover:translate-x-1 transition-transform duration-150 ease-in-out font-semibold gap-1 group'
 				aria-label={`go to ${title}`}
 			>
 				Read Post <span
