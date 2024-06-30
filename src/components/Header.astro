@@ -46,8 +46,8 @@ const NAVLINKS = [
 	<div
 		class='px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-screen-2xl grid gap-12 my-4 overflow-hidden md:overflow-visible'
 	>
-		<div class='relative flex items-center h-12 font-semibold'>
-			<div class='md:ml-16'>
+		<div class='relative flex items-center justify-between w-full h-12 font-semibold'>
+			<div class='md:hidden'>
 				<input type='checkbox' id='active' />
 				<label
 					for='active'
@@ -73,7 +73,7 @@ const NAVLINKS = [
 				</div>
 			</div>
 
-			<a class='mr-auto -ml-10 mt-3' href='/'>
+			<a class='mr-auto md:-ml-10 ml-16 mt-3' href='/'>
 				<Image src={logo} alt='the Fintech Guide' class='w-48' />
 			</a>
 
