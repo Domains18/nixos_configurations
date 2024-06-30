@@ -16,23 +16,21 @@ const {
 <article
 	class={cn(
 		isIntro
-			? 'bg-card px-4 pt-4 grid w-full min-h-full mb-4'
-			: 'grid min-h-full w-full group grid-rows-[300px_auto] md:grid-rows-[600px_220px]'
+			? 'bg-card px-4 pt-4 grid w-full md:w-[40%] min-h-96 mb-4 h-[50%]'
+			: 'grid min-h-full group grid-rows-[300px_auto] md:grid-rows-[600px_220px] h-40% w-[40%] '
 	)}
 >
 	<a class='relative overflow-hidden' href={`/post/${slug}/`}>
 		<Image
 			src={heroImage}
-			width={600}
-			height={400}
 			format='webp'
-			class='h-full min-w-full object-cover hover:scale-[110%] transition-all duration-200 rounded-[2px]'
+			class='h-full w-full min-w-full object-cover hover:scale-[110%] transition-all duration-200 rounded-[2px]'
 			alt={`img of ${title}`}
 		/>
 
 		{
 			!isIntro && (
-				<div class='z-30 absolute bottom-0 w-full h-20'>
+				<div class='z-30 absolute bottom-0  w-full h-20'>
 					<div class='-z-10 absolute bottom-0 glass w-full min-h-full' />
 					<div class='flex items-center justify-between gap-x-1 text-black px-6 py-4'>
 						<div class='flex flex-col gap-1 items-center justify-center'>
@@ -58,7 +56,7 @@ const {
 
 			<p
 				class={cn(
-					'overflow-hidden line-clamp-3 mb-5 font-[400] md:pr-[15%]',
+					'overflow-hidden line-clamp-3 mb-5 font-regular md:pr-[15%]',
 					isIntro ? 'text-black' : 'text-gray-700 dark:text-black'
 				)}
 			>
