@@ -18,7 +18,7 @@ module.exports = {
 				footer_backround: '#999999'
 			},
 			fontFamily: {
-				body: ['Manrope', ...defaultTheme.fontFamily.sans],
+				// body: ['Manrope', ...defaultTheme.fontFamily.sans],
 				primary: ['Georgia']
 			},
 			gridTemplateColumns: {
