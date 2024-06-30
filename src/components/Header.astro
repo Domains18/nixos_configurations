@@ -57,7 +57,7 @@ const NAVLINKS = [
 				<label for='active' class='close'></label>
 
 				<div
-					class='wrapper fixed top-24 -right-[100%] h-full w-full bg-main-blue transition-all duration-700 ease-in-out z-40 hidden md:block'
+					class='wrapper fixed top-24 -right-[100%] h-full w-full bg-main-blue transition-all duration-700 ease-in-out z-40 md:hidden block'
 				>
 					<ul>
 						{
@@ -83,7 +83,7 @@ const NAVLINKS = [
 					NAVLINKS.map((link) => (
 						<HeaderLink
 							href={link.url}
-							class='hover:underline text-base font-medium hover:text-blue before:transition-all before:duration-400 before:ease-custom before:bg-blue'
+							class='hover:underline  font-medium hover:text-blue before:transition-all before:duration-400 before:ease-custom before:bg-blue uppercase text-xl'
 						>
 							{link.name}
 						</HeaderLink>
