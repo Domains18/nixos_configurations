@@ -42,12 +42,12 @@ const NAVLINKS = [
 ]
 ---
 
-<header class='mt-4'>
+<header class='mt-4 py-2 bg-white sticky z-10 top-0'>
 	<div
 		class='px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-screen-2xl grid gap-12 my-4 overflow-hidden md:overflow-visible'
 	>
-		<div class='relative flex items-center h-12 font-semibold'>
-			<div class='md:ml-16'>
+		<div class='relative flex items-center justify-between w-full h-12 font-semibold'>
+			<div class='md:hidden'>
 				<input type='checkbox' id='active' />
 				<label
 					for='active'
@@ -57,7 +57,7 @@ const NAVLINKS = [
 				<label for='active' class='close'></label>
 
 				<div
-					class='wrapper fixed top-24 -right-[100%] h-full w-full bg-main-blue transition-all duration-700 ease-in-out z-40 hidden md:block'
+					class='wrapper fixed top-24 -right-[100%] h-full w-full bg-main-blue transition-all duration-700 ease-in-out z-40 md:hidden block'
 				>
 					<ul>
 						{
@@ -73,7 +73,7 @@ const NAVLINKS = [
 				</div>
 			</div>
 
-			<a class='mr-auto -ml-10 mt-3' href='/'>
+			<a class='mr-auto md:-ml-10 ml-16 mt-3' href='/'>
 				<Image src={logo} alt='the Fintech Guide' class='w-48' />
 			</a>
 
@@ -83,7 +83,7 @@ const NAVLINKS = [
 					NAVLINKS.map((link) => (
 						<HeaderLink
 							href={link.url}
-							class='hover:underline text-base font-medium hover:text-blue before:transition-all before:duration-400 before:ease-custom before:bg-blue'
+							class='hover:underline  hover:text-blue before:transition-all before:duration-400 before:ease-custom before:bg-blue uppercase text-sm font-primary'
 						>
 							{link.name}
 						</HeaderLink>
@@ -119,7 +119,10 @@ const NAVLINKS = [
 		</div>
 	</div>
 
-	<div class='flex justify-center flex-wrap gap-4 bg-blackish py-3 text-white shadow-xl'>
+
+	<!-- INFO: these are the tags that we to be removed -->
+	 <!-- INFO: not specified loaction to place the tags -->
+	<!-- <div class='flex justify-center flex-wrap gap-4 bg-white py-3 text-black shadow-xl'>
 		<TagIcon /> Tags: {
 			tags.map((tag) => (
 				<a href={`/tags/${tag}`} class='inline-block font-semibold mr-2 overflow-x-auto'>
@@ -127,7 +130,9 @@ const NAVLINKS = [
 				</a>
 			))
 		}
-	</div>
+	</div> -->
+
+
 </header>
 <script>
 	document.addEventListener('click', (event) => {

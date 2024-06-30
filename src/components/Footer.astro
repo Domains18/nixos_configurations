@@ -20,16 +20,52 @@ const SOCIALNETWORKS = [
 const today = new Date()
 ---
 
-<footer class='flex flex-col justify-center items-center w-full px-16 h-28 border-t-2'>
-	<div class='flex justify-center items-center md:justify-end gap-3 md:p-0'>
-		{
-			SOCIALNETWORKS.map((network) => (
-				<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
-					<span>{<network.icon />} </span>
-				</HeaderLink>
-			))
-		}
+<footer class="bg-footer_backround text-black py-8 text-lg">
+	<div class="max-w-7xl mx-auto">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+			<div>
+				<h2 class="font-bold mb-4 text-xl">We Help You Learn About:</h2>
+				<ul>
+					<li class="text-lg">Investing</li>
+					<li class="text-lg">Payment Systems</li>
+					<li class="text-lg">Robo-Advisors</li>
+					<li class="text-lg">Personal Finance</li>
+					<li class="text-lg">Cryptocurrencies</li>
+					<li class="text-lg">Banking</li>
+					<li class="text-lg">Credit Cards</li>
+					<li class="text-lg">Loans</li>
+					<li class="text-lg">Trading</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="font-bold mb-4 text-xl">Company</h2>
+				<ul>
+					<li>About us</li>
+					<li>Editorial guidelines</li>
+					<li>Newsletter Signup</li>
+				</ul>
+			</div>
+			<div>
+				<h2 class="font-bold mb-4 text-xl">Contact Us</h2>
+				<ul>
+					<li>Get in touch</li>
+				</ul>
+				<h2 class="font-bold mb-4 mt-4 text-xl">Connect With Us</h2>
+				<ul class="flex space-x-3">
+					{SOCIALNETWORKS.map((network) => (
+						<HeaderLink href={network.url} target="_blank" aria-label={network.name}>
+							<span class="text-black">{<network.icon />}</span>
+						</HeaderLink>
+					))}
+				</ul>
+			</div>
+			<div>
+				<h2 class="font-bold mb-4">Legal</h2>
+				<ul>
+					<li>Privacy Policy | Cookie Policy | Terms of Use | Do Not Sell My Personal Information | Affiliate Disclosure</li>
+				</ul>
+				<p class="mt-4">© {today.getFullYear()} theFintechGuide</p>
+			</div>
+		</div>
 	</div>
-
-	&copy; {today.getFullYear()} Nerds Catapult. All rights reserved.
 </footer>

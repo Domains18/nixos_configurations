@@ -7,16 +7,19 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				white: '#f8f9fa',
-				black: '#0D0D0D',
+				// white: '#f8f9fa',
+				// black: '#0D0D0D',
 				blackish: '#010326',
 				'main-blue': '#010440',
 				'neutral-blue': '#020873',
 				blue: '#030BA6',
-				green: '#00d100'
+				green: '#00d100',
+				brand_green: '#03C969',
+				footer_backround: '#999999'
 			},
 			fontFamily: {
-				body: ['Manrope', ...defaultTheme.fontFamily.sans]
+				// body: ['Manrope', ...defaultTheme.fontFamily.sans],
+				primary: ['Georgia']
 			},
 			gridTemplateColumns: {
 				list: 'repeat(auto-fill, minmax(400px, max-content))'

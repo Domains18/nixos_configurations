@@ -2,16 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Georgia';
+	src: url('/fonts/brand/georgia.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 @layer base {
-	/* body {
-		transition: background-color 0.5s ease;
-	} */
+	.prose h1,
+	.prose h2,
+	.prose h3,
+	.prose h4,
+	.prose h5,
+	.prose h6 {
+		@apply text-black;
+	}
+
+	.prose code {
+		@apply text-blackish;
+	}
+
+	html.dark .shiki,
+	html.dark .shiki span {
+		@apply bg-blackish;
+	}
+}
+
+/* @layer base {
 
 	.prose code {
 		@apply text-base;
 	}
 
-	/* prose styles here */
 	.prose h1,
 	h2,
 	h3,
@@ -26,12 +50,13 @@
 		color: var(--shiki-dark) !important;
 		background-color: theme(colors.gray.900) !important;
 	}
-}
+} */
 
 .bg-card {
-	background: linear-gradient(340.55deg, rgba(46, 92, 255, 0.15) -1.95%, rgba(0, 0, 0, 0) 26.83%),
+	/* background: linear-gradient(340.55deg, rgba(46, 92, 255, 0.15) -1.95%, rgba(0, 0, 0, 0) 26.83%),
 		linear-gradient(146.92deg, rgba(46, 92, 255, 0.15) 5.13%, rgba(0, 0, 0, 0) 28.78%),
-		linear-gradient(149.68deg, rgba(255, 255, 255, 0.1) 1.74%, rgba(255, 255, 255, 0) 93.25%);
+		linear-gradient(149.68deg, rgba(255, 255, 255, 0.1) 1.74%, rgba(255, 255, 255, 0) 93.25%); */
+	@apply bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200;
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 }
