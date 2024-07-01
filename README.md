@@ -28,6 +28,14 @@
 11. [FrontMatter](#-Frontmatter)
 12. [CLI](#-Commands)
 13. [Contributors](#-Contributors)
+14. [Changes](#-Changes)
+
+## Changes
+
+- [x] Header clean up and made sticky on scroll
+- [x] Footer Addition with specified content
+- [x] User Specified font, accent color, text-color and background color.
+- [x] Hero blog resizing in half
 
 ## 💻 Demo
 
