@@ -10,36 +10,36 @@ import { Image } from 'astro:assets'
 
 const tags = await getTags()
 
-const NAVLINKS = [
-	{
-		name: 'Investing',
-		url: '/investing'
-	},
-	{
-		name: 'Payment Systems',
-		url: '/payment-systems'
-	},
-	{
-		name: 'Robo-Advisors',
-		url: '/robo-advisors'
-	},
-	{
-		name: 'Personal Finance',
-		url: '/personal-finance'
-	},
-	{
-		name: 'Cryptocurrencies',
-		url: '/cryptocurrencies'
-	},
-	{
-		name: 'Reviews',
-		url: '/reviews'
-	},
-	{
-		name: 'News',
-		url: '/news'
-	}
-]
+// const NAVLINKS = [
+// 	{
+// 		name: 'Investing',
+// 		url: '/investing'
+// 	},
+// 	{
+// 		name: 'Payment Systems',
+// 		url: '/payment-systems'
+// 	},
+// 	{
+// 		name: 'Robo-Advisors',
+// 		url: '/robo-advisors'
+// 	},
+// 	{
+// 		name: 'Personal Finance',
+// 		url: '/personal-finance'
+// 	},
+// 	{
+// 		name: 'Cryptocurrencies',
+// 		url: '/cryptocurrencies'
+// 	},
+// 	{
+// 		name: 'Reviews',
+// 		url: '/reviews'
+// 	},
+// 	{
+// 		name: 'News',
+// 		url: '/news'
+// 	}
+// ]
 ---
 
 <header class='mt-4 py-2 bg-white sticky z-10 top-0'>
@@ -59,7 +59,7 @@ const NAVLINKS = [
 				<div
 					class='wrapper fixed top-24 -right-[100%] h-full w-full bg-main-blue transition-all duration-700 ease-in-out z-40 md:hidden block'
 				>
-					<ul>
+					<!-- <ul>
 						{
 							NAVLINKS.map((link) => (
 								<li class=''>
@@ -69,7 +69,7 @@ const NAVLINKS = [
 								</li>
 							))
 						}
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 
@@ -78,7 +78,7 @@ const NAVLINKS = [
 			</a>
 
 			<!-- nav in desktop -->
-			<nav class='hidden md:flex gap-6 w-full justify-center items-center'>
+			<!-- <nav class='hidden md:flex gap-6 w-full justify-center items-center'>
 				{
 					NAVLINKS.map((link) => (
 						<HeaderLink
@@ -89,9 +89,9 @@ const NAVLINKS = [
 						</HeaderLink>
 					))
 				}
-			</nav>
+			</nav> -->
 
-			<!-- <div
+			<div
 		id='astro-header-drawer'
 		class='hidden md:block shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent bg-white dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 -right-5 pl-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50'
 	>
@@ -104,17 +104,17 @@ const NAVLINKS = [
 				</HeaderLink>
 			</div>
 		</nav>
-	</div> -->
+	</div>
 
 			<div class='flex items-center gap-3' transition:persist='navbar'>
 				<Search />
 
 				<!-- <ToggleTheme /> -->
 
-				<!-- <button id='astro-header-drawer-button' type='button' class='md:ml-6'>
+				<button id='astro-header-drawer-button' type='button' class='md:ml-6'>
 			<MenuIcon />
 			<span class='sr-only'>Show Menu</span>
-		</button> -->
+		</button>
 			</div>
 		</div>
 	</div>
@@ -122,7 +122,7 @@ const NAVLINKS = [
 
 	<!-- INFO: these are the tags that we to be removed -->
 	 <!-- INFO: not specified loaction to place the tags -->
-	<!-- <div class='flex justify-center flex-wrap gap-4 bg-white py-3 text-black shadow-xl'>
+	<div class='flex justify-center flex-wrap gap-4 bg-white py-3 text-black shadow-xl'>
 		<TagIcon /> Tags: {
 			tags.map((tag) => (
 				<a href={`/tags/${tag}`} class='inline-block font-semibold mr-2 overflow-x-auto'>
@@ -130,7 +130,7 @@ const NAVLINKS = [
 				</a>
 			))
 		}
-	</div> -->
+	</div>
 
 
 </header>
