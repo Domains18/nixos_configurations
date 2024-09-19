@@ -1,20 +1,21 @@
 # personal configurations for nixos; 
-# this is a work in progress and will be updated as I learn more about nixos
 
-# nixos configuration file
-# /etc/nixos/configuration.nix
+- this is a work in progress and will be updated as I learn more about nixos
 
-
-# nixos-rebuild switch
-# rebuilds the system configuration
+##  nixos configuration file
+    -/etc/nixos/configuration.nix
 
 
-# nixos-rebuild boot
-# rebuilds the system configuration and updates the boot loader
+## nixos-rebuild switch
+ -rebuilds the system configuration
 
 
-# nixos-rebuild test
-# tests the system configuration without making any changes
+## nixos-rebuild boot
+ - rebuilds the system configuration and updates the boot loader
 
 
-# For more information, see https://nixos.org/nixos/manual/index.html#sec-installation
+## nixos-rebuild test
+ -tests the system configuration without making any changes
+
+
+### For more information, see https://nixos.org/nixos/manual/index.html#sec-installation
